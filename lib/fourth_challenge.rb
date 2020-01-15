@@ -18,6 +18,6 @@ def fourth_challenge
    }
 }
 
-  
-
+def createFriend(name, age, att)  
+  return {:name => name, :age => age, :attitude => att}
 end
