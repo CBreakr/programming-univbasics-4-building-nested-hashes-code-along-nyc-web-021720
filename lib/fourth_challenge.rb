@@ -1,16 +1,12 @@
 def fourth_challenge
-  
-  friend1 = createFriend("Benvolio", "17", "worried")
-  friend2 = createFriend("Mercutio", "18", "hot-headed")
-  
   epic_tragedy = {
    :montague => {
       :patriarch => {name: "Lord Montague", age: "53"},
       :matriarch => {name: "Lady Montague", age: "54"},
       :hero => {name: "Romeo", age: "15", status: "alive"},
       :hero_friends => [
-        friend1,
-        friend2
+        createFriend("Benvolio", "17", "worried"),
+        createFriend("Mercutio", "18", "hot-headed")
       ]
    }, 
    :capulet => {
@@ -23,6 +19,7 @@ def fourth_challenge
       ]
    }
 }
+end
 
 def createFriend(name, age, att)  
   return {:name => name, :age => age, :attitude => att}
